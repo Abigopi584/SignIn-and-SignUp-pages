@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="sign up page">
+		<meta name="auhtor" content="Abirami">
+		<title> Sign up for a new Account </title>
+		<style>
+			
+		    #signup{
+				border-style:dotted;
+			}
+			#signup ul li{
+				list-style:none;
+			}
+			#signup ul li input{
+			   padding:5px;
+			   border-style:none none solid none;
+			   margin:15px;}
+       </style>
+	   <script>
+	      function valueChk(prevelementName)
+			{
+	        Oform = document.form[0];
+			prevelementName = Oform.getElementbyID("prevelementName");
+			prevvalue = prevelementName.value;
+				if  (prevvalue == " ")
+					alert("enter a valid " +prevelementName );
+			}
+			
+	   </script>
+	</head>
+	<body>
+	  <section>
+		<form id="signup" method="post">
+		<h1> Sign me up </h1>
+		<p> Would you like to sign up for a subscription??? </p>
+		<ul>
+		 
+     		 <li>
+	      	     <label for ="search"> Would you like to know about HTML5 from web??? </label>
+		         <input type ="search" id="search" name="reg_search" autofocus>
+			     <input  style="border-style:solid;" type="submit" Value="SEARCH">
+		     </li>	  
+		  <li>
+			<!--Article title-->
+			<label for="about"> Article Title </label>
+			<input type="text" name="about" id="about" style="border-style:none;width:270px;" readonly value="http://www.thethtml5herald.com/register.html">
+		  </li>
+		  <li>
+			<!--Name-->
+			<label for ="name"> Name </label>
+			<input type="text" id="name" name="reg_name" required>
+		  </li>
+          <li>		  
+			<!--Address-->
+			<label for="address">Address </label>
+			<input type="text" id="address" name="reg_address" onclick= "valueChk("name")" required>
+		  </li>
+		  <li>
+		  <!--Married or no -->
+			<label> Marital Status</label>
+			<input type="radio"  name="MaritalStatus" value="Married">Married  
+			<input type="radio"  name="MaritalStatus" value="Un-Married">Un-Married 
+			<input type="radio"  name="MaritalStatus" value="Single">Single
+		  </li>
+          <li>		  
+			<!--Userid-->
+		    <label for="userid"> User ID </label>
+		    <input type="text" id="userid" name="reg_userid" required>
+	      </li>
+		  <li>
+		    <!--password-->
+		    <label for="pwd"> Password </label>
+		    <input type="password" id="pwd" name="reg_pwd" title="(password should be 6 to 15 char)" pattern="\S{6,15}" required>
+	     </li>
+         <li>		 
+			<!-- Url-->
+			<label for="url"> My URL</label>
+			<input type="url" id="url" name="reg_url" placeholder="e.g. http://aab.com" autocomplete>
+		 </li>
+         <li>		 
+			<!--Email-->
+			<label for="email"> EMail</label>
+			<input type="email" id="email" name="reg_email" required placeholder="e.g. abc@xyz.com">
+		 </li>
+		 <li>
+			<!--Knowledge rating-->
+			<label for="rating"> My Knowledge of <cite> HTML5 </cite></label>
+			<input  style="border-style:none;" type="range" id="rating" name="reg_rating" min=1 max=10 >
+	     </li>
+         <li>		 
+			<!--Start date of subsription-->
+			<label for="startdate"> Start Date of your subscription</label>
+			<input type="date" id="startdate" name="reg_startdate" min="2015-09-03"  required>
+	     </li>
+         <li>		 
+		    <!--no. of copies-->
+		    <label for="copies">Number of copies </label>
+		    <input type="number" id="copies" name="reg_copies" min="1" max ="10000" style = "border-style:solid;width:50px;"required>
+	     </li>		 
+		 <li>
+			<!-- Need daily newsletters or subscription about other paper -->
+			<input type ="checkbox" id="selling" name="selcheck" checked>
+			<label for="selling"> Can we forward more info about HTML5 and CSS3 to your mail id </label>
+		 </li>
+		 <li>
+			<input  style="border-style:solid;" type="submit" id="reg_submit" value="SUBMIT FORM">
+			<input  style="border-style:solid;" type="reset" value="RESET">
+		 </li>
+		</form>
+      </section>		
+	</body>
+</html>

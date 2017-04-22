@@ -1,0 +1,99 @@
+/* Sign In Page */
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: cursive;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    background-color:#EEE;
+}
+.header-overlay{
+    padding-bottom:15px;
+    background-color:darkseagreen;
+    margin-bottom:30px;
+
+}
+.header-overlay img{
+    padding-top:9px;
+    width:50%;
+    float:left;
+}
+.header-overlay h2{
+    text-align:left;
+    color:darkslateblue;
+    font-weight: 600;
+    padding-top:15px;
+    margin-left:-65px;
+}
+.header-overlay p{
+    margin-left:-65px;
+    color:darkcyan;
+    font-weight:400;
+    font-size:18px;
+}
+
+/* Form Control */
+
+.sign-in-form {
+    margin-top:50px;
+    /* border: 1px solid black; */
+    display:block;
+    align-content:center;
+
+}
+.form-group {
+    position:relative;
+    padding-top:20px;
+
+}
+
+.form-group label{
+    text-align:center;
+    padding-top:5px;
+    color:darkslategray;
+}
+
+.form-control{
+    display:block;
+    width:100%;
+    height:30px;
+    background-color: transparent;
+    border:1px solid darkgray;
+    border-radius:3px;
+    opcaity:0.8;
+    outline: 0px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.btn-submit,
+.btn-submit:active,
+.btn-submit:focus,
+.btn-submit:visited{
+    margin-left:100px;
+    border: 1px solid black;
+    border-radius:3px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:darkslategray;
+    text-align:center;
+}
+.btn-submit:hover{
+    border:1px solid sienna ;
+    background-color: darkgray;
+    color:midnightblue;
+    font-weight:500;
+}
+
+.btn-forgot-pwd{
+    margin-left:60px;
+    font-family: "Book Antiqua";
+    font-weight:400;
+}
+
